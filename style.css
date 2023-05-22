@@ -1,25 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    padding: 0%;
-    margin: 0px;
-    font-size: 20px;
+    background-color: antiquewhite;
+    background-image: linear-gradient(315deg, antiquewhite 0%, rgb(211, 148, 66) 100%);
     font-family: sans-serif;
-    color: white;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+}
+
+.quize_header{
+    padding: 4rem;
+}
+
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(315deg,rgb(211, 148, 66) 0%, antiquewhite 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(100, 100, 100, 0.1);
+}
+#question_num{
+    padding: .1rem;
+    text-align: center;
+    margin: 5px 0px;
+    background: linear-gradient(315deg,antiquewhite 0%,  rgb(211, 148, 66) 100%);
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: 0 0 10px 2px rgb(100, 100, 100, 0.1);
 }
 
 ul{
-    display: flex;
-    justify-content: space-around;
     list-style-type: none;
-    background-color: gray;
-    margin: 0px;
-    padding: 10px 0px;
+    padding: 0;
 }
 
-.nav_login_btn{
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 20px;
-    background-color: gray;
-    color: white;
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background-image: linear-gradient(315deg,rgb(211, 148, 66) 0%, antiquewhite 100%);
+    color: black;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+    font-weight: 600;
+    box-shadow: 0 0 10px 2px rgb(100, 100, 100, 0.1);
+}
+
+button:hover{
+    background-image: linear-gradient(315deg, antiquewhite 0%, rgb(211, 148, 66) 100%);
+    box-shadow: 0 0 10px 2px rgb(100, 100, 100, 0.1);
+}
+
+button:focus{
+    outline: none;
+    background-image: linear-gradient(315deg, rgba(250, 235, 215, 0.466) 0%, rgba(211, 148, 66, 0.521) 100%);
+    box-shadow: 0 0 10px 2px rgb(100, 100, 100, 0.1);
+}
+
+
+/* Hide the default radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: black;
+    cursor: pointer;
+  }
+  
+  /* Apply custom styles when radio button is checked */
+  input[type="radio"]:checked {
+    background-color: rgb(211, 148, 66);
+    border-color: rgb(211, 148, 66);
+  }
+  
+  /* Add a custom indicator for checked radio button */
+  input[type="radio"]:checked::before {
+    content: "\2022";
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    color: rgb(211, 148, 66);
+  }
