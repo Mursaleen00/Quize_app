@@ -237,13 +237,13 @@ submitbtn.addEventListener('click', () => {
 
             if (Math.round(score / currentquize * 100) < 70) {
 
-                quiz.innerHTML = `<h2> You Answer ${score} / 20 Questions correctly <br> 
+                quiz.innerHTML = `<h2> You Answer ${score} / 20 Questions correctly <br> <br> 
                 You Get ${Math.round(score / currentquize * 100)}% / 100% Sorry You Are Fail </h2>
                 <button onclick="location.reload()">Reload</button>`
 
             }
             else if(Math.round(score / currentquize * 100) >= 70) {
-                quiz.innerHTML = `<h2> You Answer ${score} / 20 Questions correctly <br> 
+                quiz.innerHTML = `<h2> You Answer ${score} / 20 Questions correctly <br> <br> 
                 You Get ${Math.round(score / currentquize * 100)}% / 100%  Congratulations You Are a Success </h2>
                 <button onclick="location.reload()">Reload</button>`
             }
