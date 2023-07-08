@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+.sign_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sign{
+    display: block;
+}
